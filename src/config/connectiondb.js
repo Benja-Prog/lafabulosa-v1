@@ -4,11 +4,12 @@ const mysql = require('mysql');
 //y ligado a la carpeta ./env/.env
 
 const connection = mysql.createConnection({
-    host: 'mysql-fabulosa-v1.alwaysdata.net',
-    password: '',
-    user: '240972',
-    database: 'fabulosa-v1_emisora_web'
+    host: 'us-cdbr-east-04.cleardb.com',
+    password: '44bbe039',
+    user: 'b74959fd67a0b2',
+    database: 'heroku_de58209aa376fbb'
 });
+//mysql://b74959fd67a0b2:44bbe039@us-cdbr-east-04.cleardb.com/hem/heroku_de58209aa376fbb?reconnect=true
 
 //probar el modulo:
 
