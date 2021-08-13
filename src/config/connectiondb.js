@@ -21,25 +21,4 @@ connection.connect((err) => {
     console.log("Conectado exitosamente a BD");
 })
 
-function handleDisconnect(connection){
-    connection = mysql.createPool(connection);
-
-    connection.getConnection(function(err){
-        if(err){
-            console.log('error al conectarse a db: ', err);
-            setTimeout(handleDisconnect, 2000);
-        }
-    });
-
-    connection.on('error', function(err){
-        console.log('DB Error', err);
-        if(err.code === 'PROTOCOL_CONNECTION_LOST'){
-            handleDisconnect();
-        }else{
-            throw err;
-        }
-    });
-}
-handleDisconnect(connection);
-
 module.exports = connection;
