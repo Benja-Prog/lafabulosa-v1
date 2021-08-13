@@ -157,7 +157,7 @@ const postRegistro = async (req, res) => {
                     telefono: telefono,
                     email: email,
                     passw: passHaash,
-                    rol: "administrador",
+                    rol: "usuario",
                   },
                   async (error, results) => {
                     if (error) {
