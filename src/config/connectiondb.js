@@ -14,8 +14,7 @@ const connection = mysql.createConnection({
 //probar el modulo:
 
 function handleDisconnect(connection){
-    connection = mysql.createPool(connection);
-
+    
     connection.getConnection(function(err){
         if(err){
             console.log('error al conectarse a db: ', err);
