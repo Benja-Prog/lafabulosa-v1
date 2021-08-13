@@ -12,6 +12,13 @@
   animation: efecto 1.2s infinite;
 }
 
+@media only screen and (max-width: 767px) {
+  .container-boton {
+    right: 50%;
+    bottom: 30px;
+  }
+}
+
 .container-boton:hover {
   transform: scale(1.1);
   transition: 0.3s;
