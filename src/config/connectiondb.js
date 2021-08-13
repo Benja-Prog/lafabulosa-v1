@@ -4,12 +4,11 @@ const mysql = require('mysql');
 //y ligado a la carpeta ./env/.env
 
 const connection = {
-    host: process.env.DB_HOST,
-    user: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database:  process.env.DB_DATABASE
+    host: 'us-cdbr-east-04.cleardb.com',
+    password: '44bbe039',
+    user: 'b74959fd67a0b2',
+    database: 'heroku_de58209aa376fbb'
 };
-
 
 // Probar modulo
 
