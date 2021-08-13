@@ -1312,10 +1312,7 @@ img {
   -webkit-transition-duration: 500ms;
   transition-duration: 500ms;
   box-shadow: 0 1px 5px 2px rgba(0, 0, 0, 0.15); }
-  @media only screen and (max-width: 767px) {
-    #scrollUp {
-      right: 50%;
-      bottom: 30px; } }
+  
   #scrollUp:hover {
     background-color: #fff;
     color: #232323; }
