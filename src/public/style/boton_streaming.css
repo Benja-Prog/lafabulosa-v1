@@ -1,7 +1,7 @@
 /*CSS BOTON STREAMING*/
 
 .container-boton {
-  background-color: red;
+  background-color: rgb(68, 0, 255);
   border: 1px solid rgb(248, 247, 246);
   position: fixed;
   z-index: 999;
