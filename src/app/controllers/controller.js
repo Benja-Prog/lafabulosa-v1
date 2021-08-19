@@ -1,10 +1,8 @@
-// Rutas.
-// Conexion con bd.
 const connection = require("../../config/connectiondb.js");
 const bcryptjs = require("bcryptjs");
 const random = require("../../public/js/random.js");
 const path = require("path");
-const {v4} =  require("uuid")
+const {v4}= require("uuid");
 const {unlink} = require("fs-extra");
 
 /* Index */
@@ -489,7 +487,7 @@ const postSorteosAdmin = async (req, res) => {
   connection.query("INSERT INTO db_sorteos SET ?",
     {
       titulo: titulo,
-      codigo: "Cod-" + uuidv8(),
+      codigo: "Cod-" + v4(),
       nombre_producto: nombre_producto,
       lugar: lugar,
       fecha: fecha,
